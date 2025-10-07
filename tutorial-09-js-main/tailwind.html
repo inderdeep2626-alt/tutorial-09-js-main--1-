@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/src/style.css" rel="stylesheet">
+    <script src="https://cdn.jsdeliver.net/npm/"> </script>
+
+    <style>
+        html{
+             height: fit-content;
+        }
+        body{
+            height: 100%;
+            background-image: url('image.jpg');
+            background-repeat: no-repeat;
+        }
+        .container a {
+            color: lightgrey;
+            font-size:1.2em;
+            text-decoration: none;
+        }
+        .container a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+       
+    </style>
+</head>
+<body> class="bg-gray-100 text-gray-100">
+    <!--navigation bar-->
+    <nav class="bg blue-600 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2x font-bold">my website</h1>
+            <ul class="flex space-x-4">
+                <li><a href="#" class="hover:text-gray-300">Home</a></li>
+                <li><a href="#" class="hover:text-gray-300">About</a></li>
+                <li><a href="#" class="hover:text-gray-300">Services</a></li>
+                <li><a href="#" class="hover:text-gray-300">Contact</a></li>
+                </ul>
+        </div>
+    </nav>
+
+    <!--hero section-->
+    <section class="text-center py-60 bg-gray-200">
+        <h2 class="text-4xl font-bold mb-4 text-gray-800">Welcome to My Website</h2>
+        <p class="mt-4 text-lg text-gray-600"> this was made using tailwind.</p>
+        <button class="mt-6 bg-blue-600 text-white px-4 py-6 py-3 rounded hover:bg-blue-700">Get Started
+
+        
+        Get Started
+        </button>
+    </section>
+</body>
+</html>
