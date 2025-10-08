@@ -25,6 +25,16 @@
             color: white;
             text-decoration: underline;
         }
+
+        .hero-container{
+            /* from https://css.glass */
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+        }
        
     </style>
 </head>
@@ -44,13 +54,24 @@
 
     <!--hero section-->
     <section class="text-center py-60 bg-gray-200">
+        <div class ="container2">
         <h2 class="text-4xl font-bold mb-4 text-gray-800">Welcome to My Website</h2>
-        <p class="mt-4 text-lg text-gray-600"> this was made using tailwind.</p>
+        <p class="mt-4 text-lg text-black-600"> this was made using tailwind.</p>
         <button class="mt-6 bg-blue-600 text-white px-4 py-6 py-3 rounded hover:bg-blue-700">Get Started
 
         
         Get Started
         </button>
+        </div>
     </section>
+
+    <!--Main Section-->
+    <Section class="main-container mx-auto p-6">
+        <h3 class="text-2xl font-semibold">Features</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
+            <div class="text-xl font-bold">Fast</div>
+            <p class="text-gray-600 mt-2">TailwindCSS makes it easy & quick.</p>
+            
+    </SECTION>
 </body>
 </html>
