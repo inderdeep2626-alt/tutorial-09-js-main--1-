@@ -18,6 +18,13 @@ document.getElementById('hrs').textContent="hh";
 document.getElementById('mins').textContent="mm";
 document.getElementById('secs').textContent="ss";
 
+//run the runClock function every second
+setInterval(()=>
+runClock(),
+1000);
+
+   
+function runClock(){
 //store the current date & time
 var currentDate = new Date();
 
@@ -43,3 +50,10 @@ var minsLeft = (hrsLeft - Math.floor(hrsLeft))*60;
 
 //calculate the seconds left in the current minute
 var secsLeft = (minsLeft - Math.floor(minsLeft))*60;
+
+//Display the time left until New Year Eve Bash
+document.getElementById("days").textcontent = Math.floor(daysLeft);
+document.getElementById("hrs").textcontent = Math.floor(hrsLeft);
+document.getElementById("mins").textcontent = Math.floor(minsLeft);
+document.getElementById("secs").textcontent = Math.floor(secsLeft);
+}
